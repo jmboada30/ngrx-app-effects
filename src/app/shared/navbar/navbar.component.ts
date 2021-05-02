@@ -11,9 +11,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onClick(value: string) {
-    if (!value) return;
-    console.log('value :>> ', value);
-    this.router.navigate(['/user', value]);
+  onClick(id: string) {
+    if (!id) return;
+    this.router.navigate(['/user', id]);
   }
 }
